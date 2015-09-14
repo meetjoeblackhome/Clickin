@@ -11,7 +11,7 @@ var
 	rename = require('gulp-rename'),
 	coffee = require('gulp-coffee'),
 	// Clean
-	clean = require('gulp-clean'),
+	clean = require('gulp-clean');
 	// Server
 	// connect = require('gulp-connect');
 
@@ -24,10 +24,10 @@ var
 	// });
 
 	// Clean Up
-	gulp.task('clean', function () {
-		return gulp.src('../assets/', {read: true})
-			.pipe(clean());
-	});
+	// gulp.task('clean', function () {
+	// 	return gulp.src('../assets/', {read: true})
+	// 		.pipe(clean());
+	// });
 
 	// Templates
 	gulp.task('templates', function() {
@@ -36,7 +36,7 @@ var
 			.pipe(plumber())
 			.pipe(jade({locals: YOUR_LOCALS,pretty: true}))
 			.pipe(gulp.dest('assets/'))
-			.pipe(connect.reload())
+			// .pipe(connect.reload())
 			;
 	});
 
@@ -46,7 +46,7 @@ var
 			.pipe(plumber())
 			.pipe(coffee({bare: true}))
 			.pipe(gulp.dest('../assets/javascripts/'))
-			.pipe(connect.reload())
+			// .pipe(connect.reload())
 			;
 	});
 
@@ -64,19 +64,19 @@ var
 			.pipe(rename('js.vendor.min.js'))
 			.pipe(uglify())
 			.pipe(gulp.dest('assets/javascripts/vendor/'))
-			.pipe(connect.reload())
+			// .pipe(connect.reload())
 			;
 	});
 
 	// Stylesheets
 	gulp.task('scss', function () {
-		return scss('scss/app.scss', {
+		return scss('scss/clickin.app.scss', {
 			style: 'compressed',
 		})
 			.pipe(plumber())
-			.pipe(rename('app.min.css'))
+			.pipe(rename('clickin.app.min.css'))
 			.pipe(gulp.dest('../assets/stylesheets/'))
-			.pipe(connect.reload())
+			// .pipe(connect.reload())
 			;
 	});
 
@@ -91,7 +91,7 @@ var
 	// Default Task
 	gulp.task('default',
 		gulpsync.sync([
-				'clean',
+				// 'clean',
 				[
 					// 'connect',
 					// 'jsvendor',
