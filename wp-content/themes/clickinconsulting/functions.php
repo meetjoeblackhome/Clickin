@@ -134,7 +134,7 @@ add_action( 'wp_enqueue_scripts', 'clickinconsulting_scripts' );
  */
 function theme_add_javscripts_and_stylesheets() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/developer/vendor/bootstrap/dist/css/bootstrap.min.css' );
-	wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() . '/developer/vendor/bootstrap/dist/css/bootstrap-theme.min.css' );
+	// wp_enqueue_style( 'bootstrap-theme', get_template_directory_uri() . '/developer/vendor/bootstrap/dist/css/bootstrap-theme.min.css' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/developer/vendor/font-awesome/css/font-awesome.min.css' );
 	wp_enqueue_style( 'clickin-app', get_template_directory_uri() . '/assets/stylesheets/clickin.app.min.css' );
 	wp_enqueue_script( 'jquery-2-1-4', get_template_directory_uri() . '/developer/vendor/jquery/dist/jquery.min.js', array(), '2.1.4', true );
