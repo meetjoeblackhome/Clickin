@@ -1,14 +1,30 @@
 @import "unify/style";
-@import "unify/headers/header-v6";
+@import "unify/headers/header-default-centered";
 @import "unify/footers/footer-v1";
+@import "unify/theme-skins/dark";
 body {
+	// Logotype
+	.header {
+		.logo {
+			img {
+				margin: 5px 0;
+			}
+		}
+	}
 	// Menu
-	.header-v6 {
+	.header {
 		.navbar-nav {
-			> .current-menu-item {
+			> li {
 				a {
-					font-weight: bold;
-					text-shadow: none;
+					font-size: 12px;
+					padding: 20px 30px;
+					color: #bbb;
+				}
+				&.current-menu-item {
+					a {
+						text-shadow: none;
+						color: #111;
+					}
 				}
 			}
 		}

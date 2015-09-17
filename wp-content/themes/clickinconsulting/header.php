@@ -19,45 +19,35 @@
 
 	<body class="header-fixed">
 		<div class="wrapper">
-			<!--=== Header v6 ===-->
-			<div class="header-v6 header-white-transparent header-sticky">
-				<!-- Navbar -->
-				<div class="navbar mega-menu" role="navigation">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="menu-container">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
 
-							<!-- Navbar Brand -->
-							<div class="navbar-brand">
-								<a href="index.html">
-									<img class="default-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
-									<img class="shrink-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo3-dark.png" alt="Logo">
-								</a>
-							</div>
-							<!-- ENd Navbar Brand -->
+			<!--=== Header ===-->
+			<div class="header">
+			    <div class="container">
+			        <!-- Logo -->
+			        <a class="logo" href="<?php get_home_url(); ?>">
+			            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
+			        </a>
+			        <!-- End Logo -->
 
-						</div>
+			        <!-- Toggle get grouped for better mobile display -->
+			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="fa fa-bars"></span>
+			        </button>
+			        <!-- End Toggle -->
+			    </div><!--/end container-->
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="navbar-collapse navbar-responsive-collapse collapse in" aria-expanded="true">
-							<div class="menu-container">
-								<?php wp_nav_menu( array(
-									'theme_location' => '',
-									'menu_class' => 'nav navbar-nav',
-									'container' => '',
-									'before'          => '',
-									'after'           => '',
-									) ); ?>
-							</div>
-						</div><!--/navbar-collapse-->
-					</div>
-				</div>
-				<!-- End Navbar -->
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+			        <div class="container">
+			            <?php wp_nav_menu( array(
+			                'theme_location' => '',
+			                'menu_class' => 'nav navbar-nav',
+			                'container' => '',
+			                'before'          => '',
+			                'after'           => '',
+			                ) ); ?>
+			        </div><!--/end container-->
+			    </div><!--/navbar-collapse-->
 			</div>
-			<!--=== End Header v6 ===-->
+			<!--=== End Header ===-->

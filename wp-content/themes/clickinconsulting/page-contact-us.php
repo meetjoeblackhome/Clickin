@@ -15,8 +15,10 @@ get_header();
 <!-- Interactive Slider v2 -->
 <div class="interactive-slider-v2">
     <div class="container">
-        <h1>Welcome to Unify</h1>
-        <p>Clean and fully responsive Template.</p>
+        <h1>
+        	<?php echo get_field('contact_us_title');?>
+        </h1>
+        <p><?php echo get_field('contact_us_sub_title');?></p>
     </div>
 </div>
 <!-- End Interactive Slider v2 -->
