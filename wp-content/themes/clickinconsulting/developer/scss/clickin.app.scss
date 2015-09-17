@@ -1,0 +1,16 @@
+@import "unify/style";
+@import "unify/headers/header-v6";
+@import "unify/footers/footer-v1";
+body {
+	// Menu
+	.header-v6 {
+		.navbar-nav {
+			> .current-menu-item {
+				a {
+					font-weight: bold;
+					text-shadow: none;
+				}
+			}
+		}
+	}
+}
