@@ -25,12 +25,9 @@ get_header();
 
 
 <div class="container content">
-		<div class="row">
-			
-		</div>
         <div class="row margin-bottom-30">
             <div class="col-md-9 mb-margin-bottom-30">
-                <form action="assets/php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form contact-style" novalidate="novalidate">
+                <form action="send-mail.php" method="post" id="sky-form3" class="sky-form contact-style" novalidate="novalidate">
                     <fieldset class="no-padding">
                         <label>Name <span class="color-red">*</span></label>
                         <div class="row sky-space-20">

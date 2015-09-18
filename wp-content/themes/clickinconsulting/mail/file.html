@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<script>
+	//	hostinger.ru
+		$(document).ready(function(){
+			
+			var $form = $('#form');
+			var $submit = $('#submit');
+			var $message = $('#message');
+
+			function submit_data(data){
+				$.ajax({
+					type: 'POST',
+					url: 'test.php',
+					data: data,
+					dataType: 'json',
+					cache: false,
+					timeout: 700,
+					success: function(data){
+						console.log('success');
+					},
+					error: function(req, status, error){
+						console.log(error);
+					},
+					complete: function(req, status){
+						$message.html();
+					}
+				});
+			}
+
+			$submit.on('click', function(e){
+				e.preventDefault();
+				var $name = $form.find('#name').val();
+				var $last_name = $form.find('#last_name').val();
+				if (($name === "") || ($last_name === "")) {
+					console.log('error');
+				}
+				else {
+					submit_data($form.serialize());
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="message"></div>
+	<form id="form" action="#" method="post" ecntype="multipart/form-data">
+		<div>
+		name:
+			<input type="text" name="name" id="name" />
+		</div>
+		<div>
+		last-name:
+			<input type="text" name="last_name" id="last_name" />
+		</div>
+		<input type="submit" id="submit" />
+	</form>
+</body>
+</html>
