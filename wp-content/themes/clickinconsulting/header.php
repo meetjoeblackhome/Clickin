@@ -46,7 +46,8 @@
 			                'container' => '',
 			                'before'          => '',
 			                'after'           => '',
-			                ) ); ?>
+			                ) );
+			            ?>
 			        </div><!--/end container-->
 			    </div><!--/navbar-collapse-->
 			</div>
