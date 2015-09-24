@@ -135,10 +135,10 @@
 		<script>
 
 			jQuery(document).ready(function() {
-				// App.init();
+				App.init();
 				// App.initCounter();
 				// App.initParallaxBg();
-				// RevolutionSlider.initRSfullScreenOffset();
+				RevolutionSlider.initRSfullScreenOffset();
 			});
 
 		</script>
