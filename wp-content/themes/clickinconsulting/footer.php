@@ -132,5 +132,15 @@
 			</div><!-- / footer -->
 		</div><!-- / wrapper -->
 		<?php wp_footer(); ?>
+		<script>
+
+			jQuery(document).ready(function() {
+				// App.init();
+				// App.initCounter();
+				// App.initParallaxBg();
+				// RevolutionSlider.initRSfullScreenOffset();
+			});
+
+		</script>
 	</body>
 </html>

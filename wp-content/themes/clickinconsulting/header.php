@@ -19,16 +19,14 @@
 
 	<body class="header-fixed">
 		<div class="wrapper">
-
 			<!--=== Header ===-->
 			<div class="header">
 			    <div class="container">
 			        <!-- Logo -->
 			        <a class="logo" href="<?php get_home_url(); ?>">
-			            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
+			            <img style="padding-top: 10px;" width="120px" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
 			        </a>
 			        <!-- End Logo -->
-
 			        <!-- Toggle get grouped for better mobile display -->
 			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 			            <span class="sr-only">Toggle navigation</span>
@@ -36,7 +34,6 @@
 			        </button>
 			        <!-- End Toggle -->
 			    </div><!--/end container-->
-
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 			        <div class="container">
