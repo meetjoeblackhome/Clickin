@@ -128,6 +128,12 @@ function assets() {
 	}
 	// End :: Contact Us Page
 
+	// Portfolio Page
+	if(is_page('portfolio')) {
+		wp_enqueue_script( 'matchheight', get_template_directory_uri() . '/assets/plugins/jquery.matchHeight.js', array(), '', true );
+	}
+	// End :: Portfolio Page
+
 	// Rev Slider
 	if (is_home()) {
 		wp_enqueue_style( 'revsl', get_template_directory_uri() . '/assets/plugins/revolution-slider/rs-plugin/css/settings.css' );

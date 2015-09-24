@@ -13,8 +13,14 @@
  *
  * @package WordPress
  */
+
 // DB USER root
 // DB Pass kTT1rRLSFV
+
+// Admin Panel Creds
+/** User: admin
+/** Pass: @g5$hKl2d%r1FpW)7F
+
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('DB_NAME', 'u792662490_click');
@@ -79,6 +85,3 @@ if ( !defined('ABSPATH') )
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once(ABSPATH . 'wp-settings.php');
-
-/** User: admin
-/** Pass: @g5$hKl2d%r1FpW)7F
