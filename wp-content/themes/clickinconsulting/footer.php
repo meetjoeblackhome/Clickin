@@ -10,7 +10,7 @@
  */
 
 ?>
-			<div class="footer-v1">
+			<div class="footer-v1" id="footer">
 				<div class="footer">
 					<div class="container">
 						<div class="row">

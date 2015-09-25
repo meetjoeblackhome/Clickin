@@ -12,83 +12,84 @@
 get_header();
 ?>
 
+<style>
+	#technologies {
+		margin-top: 100px;
+	}
+	.post {
+		border-bottom: 1px solid #eee;
+		border-top: ;
+		padding-bottom: 10px;
+	}
+	.post:last-child {
+		border-bottom: none;
+	}
+	.post .post-image {
+		max-width: 100px;
+		margin: 0 auto;
+	}
+	.post .tags .tag {
+		background: #fafafa;
+		border-radius: 2px;
+		margin-right: 10px;
+		font-weight: bold;
+		padding: 8px 12px;
+	}
+	.post .tags .tag:last-child {
+		margin-right: 0;
+	}
+</style>
 <!--=== Content Part ===-->
-<div class="container content">
+<div class="container content" id="technologies">
 	<div class="row">
-    	<div class="col-md-12">
-        	<div class="headline"><h2>Technologies</h2></div>
+		<div class="col-md-12">
+			<div class="headline">
+				<h2>Technologies</h2>
+			</div>
+			
+			<?php $my_query = new WP_Query('category_name=technologies-category'); ?>
+			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				<?php 
+					$thumb_id = get_post_thumbnail_id();
+					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+					$thumb_url = $thumb_url_array[0];
+				?>
+				<!-- Clients Block-->
+				<div class="row clients-page margin-bottom-20 post">
+					<div class="col-md-2">
+						<img src="<?php echo $thumb_url; ?>" class="img-responsive hover-effect post-image" alt="" />
+					</div>
+					<div class="col-md-10">
+						<h3>
+							<?php the_title(); ?>
+						</h3>
+						<?php
+							// Tags
+							$posttags = get_the_tags();
+							if($posttags !== "undefined") { ?>
+								<ul class="list-inline tags">
+									<?php
+										if ($posttags) {
+											foreach($posttags as $tag) {
+												echo "<li class='tag'>{$tag->name }</li>"; 
+											}
+										}
+									?>
+									<!-- <li><i class="fa fa-map-marker color-green"></i> USA</li>
+									<li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
+									<li><i class="fa fa-briefcase color-green"></i> Web Design &amp; Development</li> -->
+								</ul>
+							<?php } ?>
+						<div class="post-content">
+							<?php the_content(); ?>
+						</div>
+					</div>
+				</div>
+				<!-- End Clients Block-->
+			<?php endwhile; ?>
 
-            <!-- Clients Block-->
-            <div class="row clients-page">
-                <div class="col-md-2">
-                    <img src="https://pbs.twimg.com/profile_images/580046982229594112/jWkWkijS.jpg" class="img-responsive hover-effect" alt="" />
-                </div>
-                <div class="col-md-10">
-                    <h3>Cisco Systems, Inc</h3>
-                    <ul class="list-inline">
-                        <li><i class="fa fa-map-marker color-green"></i> USA</li>
-                        <li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
-                        <li><i class="fa fa-briefcase color-green"></i> Web Design &amp; Development</li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
-                    <p>Olerano ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna edetquam lacus. Fusce condimentum eleifend enim a sint occaecati feugiat..</p>
-                </div>
-            </div>
-            <!-- End Clients Block-->
-
-            <!-- Clients Block-->
-            <div class="row clients-page">
-                <div class="col-md-2">
-                    <img src="https://pbs.twimg.com/profile_images/580046982229594112/jWkWkijS.jpg" class="img-responsive hover-effect" alt="" />
-                </div>
-                <div class="col-md-10">
-                    <h3>Natural Green</h3>
-                    <ul class="list-inline">
-                        <li><i class="fa fa-map-marker color-green"></i> Canada</li>
-                        <li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
-                        <li><i class="fa fa-briefcase color-green"></i> Logo Design &amp; Wordpress</li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. Olerano ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna edetquam lacus. Fusce condimentum eleifend enim a sint occaecati feugiat..</p>
-                </div>
-            </div>
-            <!-- End Clients Block-->
-
-            <!-- Clients Block-->
-            <div class="row clients-page">
-                <div class="col-md-2">
-                    <img src="https://pbs.twimg.com/profile_images/580046982229594112/jWkWkijS.jpg" class="img-responsive hover-effect" alt="" />
-                </div>
-                <div class="col-md-10">
-                    <h3>The Coca-Cola Company</h3>
-                    <ul class="list-inline">
-                        <li><i class="fa fa-map-marker color-green"></i> USA</li>
-                        <li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
-                        <li><i class="fa fa-briefcase color-green"></i> Web Design &amp; Development</li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
-                    <p>Olerano ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna edetquam lacus. Fusce condimentum eleifend enim a sint occaecati feugiat..</p>
-                </div>
-            </div>
-            <!-- End Clients Block-->
-
-            <!-- Clients Block-->
-            <div class="row clients-page">
-                <div class="col-md-2">
-                    <img src="https://pbs.twimg.com/profile_images/580046982229594112/jWkWkijS.jpg" class="img-responsive hover-effect" alt="" />
-                </div>
-                <div class="col-md-10">
-                    <h3>Game Cast TV</h3>
-                    <ul class="list-inline">
-                        <li><i class="fa fa-map-marker color-green"></i> Europe</li>
-                        <li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
-                        <li><i class="fa fa-briefcase color-green"></i> Web Design &amp; HTML/CSS</li>
-                    </ul>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. Olerano ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna edetquam lacus. Fusce condimentum eleifend enim a sint occaecati feugiat..</p>
-                </div>
-            </div>
-            <!-- End Clients Block-->
-        </div><!--/col-md-12-->
-    </div><!--/row-->
+		</div><!--/col-md-12-->
+	</div><!--/row-->
 </div><!--/container-->
 <!--=== End Content Part ===-->
 
