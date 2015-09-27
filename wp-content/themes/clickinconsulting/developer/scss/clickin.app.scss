@@ -1,9 +1,10 @@
-@import "unify/style";
-@import "unify/headers/header-default-centered";
-@import "../vendor/sky-forms-pro/skyforms/css/sky-forms";
-@import "../vendor/sky-forms-pro/skyforms/css/custom-sky-forms";
-@import "unify/footers/footer-v1";
-
+// Pages
+	@import 'pages/home';
+	@import 'pages/portfolio';
+	@import 'pages/contact-us';
+	@import 'pages/technologies';
+	@import 'pages/services';
+	@import 'pages/about-us';
 body {
 	// Logotype
 	.header {

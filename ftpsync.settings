@@ -29,7 +29,7 @@
 		// "use_tempfile": true,
 
 		// Regular expression, recommending using \b in general and /.../ for folders to avoid matching substrings
-		//"ignore": "",
+		"ignore": "/wp-content/themes/clickinconsulting/developer/",
 
 		// Can be used for increase of performance or to allow build scripts to finish
 		// "upload_delay": 0, // [seconds]
