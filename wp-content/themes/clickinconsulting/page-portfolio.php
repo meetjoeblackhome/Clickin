@@ -11,10 +11,9 @@
  */
 get_header();
 ?>
-
 <style>
 	.preloader {
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: 100%;
 		background: #fff;
@@ -25,7 +24,7 @@ get_header();
 	}
 	.preloader .preloader__icon__container {
 		position: absolute;
-		top: 250px;
+		top: 45%;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -34,9 +33,39 @@ get_header();
 	.preloader .preloader__icon__container .fa {
 		color: #ccc;
 	}
+	.heading {
+		background: url('http://cs622331.vk.me/v622331273/45053/FHFnahfYGkE.jpg') no-repeat;
+		background-size: 100% auto;
+		background-position: left 5%;
+		overflow: hidden;
+		height: 300px;
+		margin-top: 100px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.heading:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,.75);
+		top: 0;
+		left: 0;
+	}
+	.heading-text {
+		margin-top: 40px;
+		padding: 40px;
+	}
+	.heading-text h1 {
+		color: #333;
+		font-size: 36px;
+	}
+	.heading-text p {
+		color: #333;
+		font-size: 16px;
+	}
 	#portfolio {
 		overflow: hidden;
-		margin-top: 100px;
 		position: relative;
 	}
 	#portfolio .col-md-4  {
@@ -52,12 +81,31 @@ get_header();
 	}
 </style>
 
-<div class="container content-md" id="portfolio">
-	<div class="preloader">
-			<div class="preloader__icon__container">
-				<i class="fa fa-3x fa-refresh fa-spin"></i>
+<!-- Preloader -->
+<div class="preloader">
+		<div class="preloader__icon__container">
+			<i class="fa fa-3x fa-refresh fa-spin"></i>
+		</div>
+</div>
+<!-- End :: Preloader -->
+
+<!-- Heading Image -->
+<div class="heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="heading-text">
+					<h1>Portfolio</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo aliquid, at accusantium, amet officiis qui nulla tempore. Consequatur, molestias?</p>
+				</div>
 			</div>
+		</div>
 	</div>
+</div>
+<!-- End :: Heading Image -->
+
+<div class="container content-md" id="portfolio">
+
 	<div class="row news-v1">
 		<?php $my_query = new WP_Query('category_name=portfolio-category'); ?>
 		<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
@@ -89,10 +137,12 @@ get_header();
 <?php get_footer() ?>
 
 <script>
-	$(function(){
-		setTimeout(
-			function(){
-				$('.preloader').remove();
-			}, 800);
-	});
+	// Preloader
+		$(function(){
+			setTimeout(
+				function(){
+					$('.preloader').remove();
+				}, 800);
+		});
+	// End :: Preloader
 </script>

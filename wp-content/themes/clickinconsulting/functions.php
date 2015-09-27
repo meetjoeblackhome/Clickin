@@ -121,7 +121,7 @@ function assets() {
 	wp_enqueue_style( 'header6', get_template_directory_uri() . '/developer/scss/unify/headers/header-v6.css' );
 	wp_enqueue_script( 'jquery-2-1-4', get_template_directory_uri() . '/developer/vendor/jquery/dist/jquery.min.js', array(), '2.1.4', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/developer/vendor/bootstrap/dist/js/bootstrap.min.js', array(), '3.3.5', true );
-
+	wp_enqueue_script( 'unify-app', get_template_directory_uri() . '/assets/javascripts/unify.app.js', array(), '', true );
 	// Contact Us Page
 	if(is_page('contact-us')) {
 		wp_enqueue_script( 'recaptcha', 'https://www.google.com/recaptcha/api.js', array(), '', true );
@@ -139,7 +139,6 @@ function assets() {
 		wp_enqueue_style( 'revsl', get_template_directory_uri() . '/assets/plugins/revolution-slider/rs-plugin/css/settings.css' );
 		wp_enqueue_script( 'themepunchtoolsrevsl', get_template_directory_uri() . '/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js', array(), '', true );
 		wp_enqueue_script( 'themepunchrevsl', get_template_directory_uri() . '/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js', array(), '', true );
-		wp_enqueue_script( 'unify-app', get_template_directory_uri() . '/assets/javascripts/unify.app.js', array(), '', true );
 		wp_enqueue_script( 'revsl', get_template_directory_uri() . '/assets/plugins/revolution-slider/revolution-slider.js', array(), '', true );
 	}
 	// End :: Rev Slider

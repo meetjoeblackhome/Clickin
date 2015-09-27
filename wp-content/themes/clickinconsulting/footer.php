@@ -111,14 +111,14 @@
 		</div><!-- / wrapper -->
 		<?php wp_footer(); ?>
 		<script>
-
-			jQuery(document).ready(function() {
-				// App.init();
-				// App.initCounter();
-				// App.initParallaxBg();
-				// RevolutionSlider.initRSfullScreenOffset();
-			});
-
+			(function(){
+				if(typeof App === "object" && App !== "undefined") {
+					App.init();
+				}
+				if(typeof RevolutionSlider === "object" && App !== "undefined") {
+					RevolutionSlider.initRSfullScreenOffset();
+				}
+			}());
 		</script>
 	</body>
 </html>

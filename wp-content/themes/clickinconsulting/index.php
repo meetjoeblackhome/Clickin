@@ -21,7 +21,7 @@ get_header(); ?>
 	            <!-- SLIDE -->
 	            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
 	                <!-- MAIN IMAGE -->
-	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/7.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/FS1ByLev8BQ.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
 	                <!-- LAYER -->
 	                <div class="tp-caption re-title-v1 sft start"
@@ -33,7 +33,7 @@ get_header(); ?>
 	                    data-easing="Back.easeInOut"
 	                    data-endeasing="Power1.easeIn"
 	                    data-endspeed="300">
-	                    Welcome To Unify
+	                    Welcome To Clickin Consulting
 	                </div>
 	                <!-- END LAYER -->
 
@@ -66,8 +66,8 @@ get_header(); ?>
 	                    data-endeasing="Power1.easeIn"
 	                    data-captionhidden="off"
 	                    style="z-index: 6">
-	                    <a href="#" class="btn-u btn-u-lg re-btn-brd margin-right-5">Read About Us</a>
-	                    <a href="#" class="btn-u btn-u-lg">Visit Our Work</a>
+	                    <a href="about-us" class="btn-u btn-u-lg re-btn-brd margin-right-5">Read About Us</a>
+	                    <a href="portfolio" class="btn-u btn-u-lg">Visit Our Work</a>
 	                </div>
 	                <!-- END LAYER -->
 	            </li>
