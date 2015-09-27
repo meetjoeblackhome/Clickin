@@ -1,0 +1,47 @@
+.portfolio__page {
+	overflow: hidden;
+	position: relative;
+	.portfolio__item__container {
+		margin-bottom: 40px;
+		.portfolio__item {
+			background: #fafafa;
+			height: 100%;
+			box-shadow: 2px 2px 4px rgba(0,0,0,.15);
+		}
+	}
+	.news-v1 .news-v1-in {
+		background: none;
+	}
+}
+
+.heading {
+	background: url('http://cs622331.vk.me/v622331273/45053/FHFnahfYGkE.jpg') no-repeat;
+	background-size: 100% auto;
+	background-position: left 5%;
+	overflow: hidden;
+	height: 300px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,.75);
+		top: 0;
+		left: 0;
+	}
+	.heading-text {
+		margin-top: 40px;
+		padding: 40px;
+		h1 {
+			color: #333;
+			font-size: 36px;
+		}
+		p {
+			color: #333;
+			font-size: 16px;
+		}
+	}
+}
