@@ -1,0 +1,13 @@
+// Services Page
+.services__page {
+	position: relative;
+	overflow: hidden;
+	.breadcrumbs-v3 {
+		&.img-v3 {
+			background: url('../images/services/Hzd-eh04v7g.jpg');
+		}
+	}
+	.featured-blog .featured-img:after {
+		display: none;
+	}
+}

@@ -12,35 +12,8 @@
 get_header();
 ?>
 
-<style>
-	#technologies {
-		margin-top: 100px;
-	}
-	.post {
-		border-bottom: 1px solid #eee;
-		border-top: ;
-		padding-bottom: 10px;
-	}
-	.post:last-child {
-		border-bottom: none;
-	}
-	.post .post-image {
-		max-width: 100px;
-		margin: 0 auto;
-	}
-	.post .tags .tag {
-		background: #fafafa;
-		border-radius: 2px;
-		margin-right: 10px;
-		font-weight: bold;
-		padding: 8px 12px;
-	}
-	.post .tags .tag:last-child {
-		margin-right: 0;
-	}
-</style>
 <!--=== Content Part ===-->
-<div class="container content" id="technologies">
+<div class="container content technologies__page">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="headline">
@@ -75,9 +48,6 @@ get_header();
 											}
 										}
 									?>
-									<!-- <li><i class="fa fa-map-marker color-green"></i> USA</li>
-									<li><i class="fa fa-globe color-green"></i> <a class="linked" href="#">http://www.example.com</a></li>
-									<li><i class="fa fa-briefcase color-green"></i> Web Design &amp; Development</li> -->
 								</ul>
 							<?php } ?>
 						<div class="post-content">
@@ -87,7 +57,6 @@ get_header();
 				</div>
 				<!-- End Clients Block-->
 			<?php endwhile; ?>
-
 		</div><!--/col-md-12-->
 	</div><!--/row-->
 </div><!--/container-->

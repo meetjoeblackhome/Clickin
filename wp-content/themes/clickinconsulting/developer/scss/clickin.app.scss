@@ -1,5 +1,6 @@
 // Modules
 	@import 'modules/preloader';
+	@import 'modules/footer';
 // Pages
 	@import 'pages/home';
 	@import 'pages/portfolio';
@@ -32,6 +33,14 @@ body {
 					}
 				}
 			}
+		}
+	}
+	// Breadcrumbs
+	.breadcrumbs-v3 {
+		padding-top: 255px;
+		&.img-v3 {
+			background-repeat: no-repeat;
+			background-position: bottom center;
 		}
 	}
 }

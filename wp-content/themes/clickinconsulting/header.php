@@ -35,7 +35,7 @@
 							<!-- Navbar Brand -->
 							<div class="navbar-brand">
 								<a class="logo" href="<?php get_home_url(); ?>">
-									<img class="shrink-logo" style="padding-top: 10px;" width="120px" height="auto" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
+									<img class="shrink-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
 								</a>
 							</div>
 							<!-- End Navbar Brand -->

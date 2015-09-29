@@ -18,45 +18,41 @@ get_header();
 	</div>
 </div>
 <!-- End :: Preloader -->
-
-<!-- Heading Image -->
-<div class="heading">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div class="heading-text">
-					<h1>Portfolio</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo aliquid, at accusantium, amet officiis qui nulla tempore. Consequatur, molestias?</p>
-				</div>
-			</div>
+<div class="portfolio__page">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-v3 img-v3 text-center">
+		<div class="container">
+			<h1>Portfolio</h1>
+			<p>Creative Freedom Matters User Experience</p>
 		</div>
 	</div>
-</div>
-<!-- End :: Heading Image -->
+	<!-- End :: Breadcrumbs -->
 
-<div class="container content-md portfolio__page">
-	<div class="row news-v1">
-		<?php $my_query = new WP_Query('category_name=portfolio-category'); ?>
-		<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-			<?php 
-				$thumb_id = get_post_thumbnail_id();
-				$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-				$thumb_url = $thumb_url_array[0];
-			?>
-			<div class="col-md-4 md-margin-bottom-40 portfolio__item__container" data-mh="portfolio__item">
-				<div class="portfolio__item">
-					<div class="news-v1-in">
-						<img class="img-responsive" src="<?php echo $thumb_url; ?>" />
-						<h3>
-							<?php the_title(); ?>
-						</h3>
-						<div class="post-content">
-							<?php the_content(); ?>
+	<div class="container content-md">
+
+		<div class="row news-v1">
+			<?php $my_query = new WP_Query('category_name=portfolio-category'); ?>
+			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				<?php 
+					$thumb_id = get_post_thumbnail_id();
+					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+					$thumb_url = $thumb_url_array[0];
+				?>
+				<div class="col-md-4 md-margin-bottom-40 portfolio__item__container" data-mh="portfolio__item">
+					<div class="portfolio__item">
+						<div class="news-v1-in">
+							<img class="img-responsive" src="<?php echo $thumb_url; ?>" />
+							<h3>
+								<?php the_title(); ?>
+							</h3>
+							<div class="post-content">
+								<?php the_content(); ?>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		<?php endwhile; ?>
+			<?php endwhile; ?>
+		</div>
 	</div>
 </div>
 

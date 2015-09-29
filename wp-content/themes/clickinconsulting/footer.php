@@ -16,8 +16,8 @@
 						<div class="row">
 							<!-- About -->
 							<div class="col-md-3 md-margin-bottom-40">
-								<a href="index.html">
-									<img id="logo-footer" class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo3-light.png">
+								<a href="/">
+									<img id="logo-footer" class="footer-logo img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo-footer.png" alt="Clickin Consulting Logotype">
 								</a>
 								<p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
 								<p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
@@ -28,11 +28,14 @@
 							<div class="col-md-3 md-margin-bottom-40">
 								<div class="headline"><h2>Useful Links</h2></div>
 								<ul class="list-unstyled link-list">
-									<li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-									<li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-									<li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-									<li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-									<li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+									<?php wp_nav_menu( array(
+										'theme_location' => '',
+										'menu_class' => 'list-unstyled link-list',
+										'container' => '',
+										'before'          => '',
+										'after'           => '<i class="fa fa-angle-right"></i>',
+										) );
+									?>
 								</ul>
 							</div><!--/col-md-3-->
 							<!-- End Link List -->

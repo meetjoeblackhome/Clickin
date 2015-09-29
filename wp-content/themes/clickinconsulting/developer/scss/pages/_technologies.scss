@@ -1,0 +1,26 @@
+.technologies__page {
+	margin-top: 100px;
+	.post {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 10px;
+		&:last-child {
+			border-bottom: none;
+		}
+		.post-image {
+			max-width: 100px;
+			margin: 0 auto;
+		}
+		.tags {
+			.tag {
+				background: #fafafa;
+				border-radius: 2px;
+				margin-right: 10px;
+				font-weight: bold;
+				padding: 8px 12px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
