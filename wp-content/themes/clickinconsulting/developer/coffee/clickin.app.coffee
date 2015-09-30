@@ -1,2 +1,11 @@
 jQuery(document).ready ->
-	App.init()
+	clickin =
+		preloader: ->
+			# Preloader
+			preloader = $('.preloader');
+			setTimeout (->
+				preloader.remove()
+			), 800
+			# End :: Preloader
+	clickin.preloader()
+

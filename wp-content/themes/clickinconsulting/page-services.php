@@ -14,13 +14,6 @@ get_header();
 
 <!-- Services -->
 <div class="services__page">
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader__icon__container">
-			<i class="fa fa-3x fa-refresh fa-spin"></i>
-		</div>
-	</div>
-	<!-- End :: Preloader -->
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs-v3 img-v3 text-center">
 		<div class="container">
@@ -114,7 +107,6 @@ get_header();
 	<!-- End :: Services -->
 </div>
 <!-- End :: Services Page -->
-
 
 <?php get_footer() ?>
 

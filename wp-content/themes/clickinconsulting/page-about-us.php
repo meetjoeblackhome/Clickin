@@ -12,18 +12,26 @@
 get_header();
 ?>
 
-	<div class="container content-sm">
-		<div class="headline-center margin-bottom-60">
-			<h2>
-				<?php echo get_field("about_us_heading"); ?>
-			</h2>
+<!-- About Us Page -->
+
+<div class="abous-us__page">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-v3 img-v3 text-center">
+		<div class="container">
+			<?php if(get_field('about_us_heading') !== "") { ?>
+				<h1>
+					<?php echo get_field("about_us_heading"); ?>
+				</h1>
+			<?php } ?>
 			<?php if(get_field('about_us_sub_heading') !== "") { ?>
-				<div>
+				<p>
 					<?php echo get_field('about_us_sub_heading');?>
-				</div>
+				</p>
 			<?php } ?>
 		</div>
-
+	</div>
+	<!-- End :: Breadcrumbs -->
+	<div class="container content-sm">
 		<?php 
 			// Add Attachment Image
 			$thumb_id = get_post_thumbnail_id();
@@ -53,6 +61,8 @@ get_header();
 				</div>
 			</div>
 		</div><!--/end row-->
-	</div>
+	</div><!-- /end container -->
+</div>
+<!-- End :: About Us Page -->
 
 <?php get_footer() ?>

@@ -11,13 +11,7 @@
  */
 get_header();
 ?>
-<!-- Preloader -->
-<div class="preloader">
-	<div class="preloader__icon__container">
-		<i class="fa fa-3x fa-refresh fa-spin"></i>
-	</div>
-</div>
-<!-- End :: Preloader -->
+
 <div class="portfolio__page">
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs-v3 img-v3 text-center">
@@ -56,18 +50,4 @@ get_header();
 	</div>
 </div>
 
-
-
-
 <?php get_footer() ?>
-
-<script>
-	// Preloader
-		$(function(){
-			setTimeout(
-				function(){
-					$('.preloader').remove();
-				}, 800);
-		});
-	// End :: Preloader
-</script>

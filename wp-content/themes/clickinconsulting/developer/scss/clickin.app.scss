@@ -1,3 +1,5 @@
+// Vars
+	@import 'vars/colors';
 // Modules
 	@import 'modules/preloader';
 	@import 'modules/footer';
@@ -8,39 +10,47 @@
 	@import 'pages/technologies';
 	@import 'pages/services';
 	@import 'pages/about-us';
+// Themes
+	@import 'themes/clickin';
+
 body {
-	// Logotype
-	.header {
-		.logo {
-			img {
-				margin: 5px 0;
-			}
-		}
-	}
-	// Menu
-	.header {
-		.navbar-nav {
-			> li {
-				a {
-					font-size: 12px;
-					padding: 20px 30px;
-					color: #bbb;
+	.wrapper {
+		position: relative;
+		// Menu
+		.header-v6 {
+			.navbar-brand {
+				img {
+					height: 40px;
 				}
-				&.current-menu-item {
+			}
+			.navbar-nav {
+				> li {
 					a {
-						text-shadow: none;
-						color: #111;
+						font-size: 12px;
+						padding: 20px 30px;
+						color: #bbb;
+					}
+					&.current-menu-item {
+						a {
+							text-shadow: none;
+							color: #111;
+							font-weight: bold;
+						}
 					}
 				}
 			}
 		}
-	}
-	// Breadcrumbs
-	.breadcrumbs-v3 {
-		padding-top: 255px;
-		&.img-v3 {
-			background-repeat: no-repeat;
-			background-position: bottom center;
+		// Breadcrumbs
+		.breadcrumbs-v3 {
+			min-height: 450px;
+			margin-bottom: 30px;
+			.container {
+				margin-top: 110px;
+			}
+			&.img-v3 {
+				background-repeat: no-repeat;
+				background-position: bottom center;
+			}
 		}
 	}
 }

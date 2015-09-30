@@ -1,6 +1,4 @@
 .portfolio__page {
-	position: relative;
-	overflow: hidden;
 	.breadcrumbs-v3 {
 		&.img-v3 {
 			background: url('../images/portfolio/mx3rAJXF3B4.jpg');
@@ -14,7 +12,12 @@
 			box-shadow: 2px 2px 4px rgba(0,0,0,.15);
 		}
 	}
-	.news-v1 .news-v1-in {
-		background: none;
+	.news-v1 {
+		.news-v1-in {
+			background: none;
+			img {
+				margin: 0 auto;
+			}
+		}
 	}
 }

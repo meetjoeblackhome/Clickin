@@ -60,3 +60,15 @@
 				<!-- End Navbar -->
 			</div>
 			<!--=== End Header v6 ===-->
+
+			<!-- Preloader -->
+			<div class="preloader">
+				<div class="preloader__icon__container">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<!-- End :: Preloader -->

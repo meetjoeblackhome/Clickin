@@ -1,3 +1,13 @@
 jQuery(document).ready(function() {
-  return App.init();
+  var clickin;
+  clickin = {
+    preloader: function() {
+      var preloader;
+      preloader = $('.preloader');
+      return setTimeout((function() {
+        return preloader.remove();
+      }), 800);
+    }
+  };
+  return clickin.preloader();
 });

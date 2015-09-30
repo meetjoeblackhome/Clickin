@@ -1,0 +1,64 @@
+.contact-us__page {
+	// Breadcrumbs
+	.breadcrumbs-v3 {
+		&.img-v3 {
+			background: url('../images/contact-us/VlojG-IB6hs.jpg');
+		}
+	}
+	// Vars Colors
+	$error-c: #cc0000;
+	// Form
+		.wpcf7-form {
+			// CAPTACHA
+			.g-recaptcha {
+				margin: 25px 0 20px 0;
+			}
+			// Button
+			.wpcf7-submit {
+				border: 0;
+				color: #fff;
+				font-size: 14px;
+				cursor: pointer;
+				font-weight: 400;
+				padding: 6px 13px;
+				position: relative;
+				background: $theme-c;
+				white-space: nowrap;
+				display: inline-block;
+				text-decoration: none;
+				&:hover {
+					outline: 0;
+					background: $theme-c-h;
+					color: #fff;
+					text-decoration: none;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+				&:focus {
+					outline: 0;
+				}
+			}
+			// Textarea
+			.wpcf7-textarea {
+				resize: vertical;
+				max-width: 100% !important;
+			}
+			// Non Valid
+			span.wpcf7-not-valid-tip {
+				color: $error-c;
+				font-size: 12px;
+			}
+			// Validation Errors Block
+			div.wpcf7-validation-errors {
+				font-size: 12px;
+				border: none;
+				color: $error-c;
+				padding: 0;
+				margin: 0;
+				margin-top: 10px;
+
+			}
+		}
+}

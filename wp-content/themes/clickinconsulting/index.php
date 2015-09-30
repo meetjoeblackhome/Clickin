@@ -21,7 +21,7 @@ get_header(); ?>
 	            <!-- SLIDE -->
 	            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
 	                <!-- MAIN IMAGE -->
-	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/FS1ByLev8BQ.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/92k0uVmBAjI.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
 	                <!-- LAYER -->
 	                <div class="tp-caption re-title-v1 sft start"
@@ -33,12 +33,12 @@ get_header(); ?>
 	                    data-easing="Back.easeInOut"
 	                    data-endeasing="Power1.easeIn"
 	                    data-endspeed="300">
-	                    Welcome To Clickin Consulting
+	                    Clickin Consulting
 	                </div>
 	                <!-- END LAYER -->
 
 	                <!-- LAYER -->
-	                <div class="tp-caption re-text-v1 sft"
+<!-- 	                <div class="tp-caption re-text-v1 sft"
 	                    data-x="center"
 	                    data-hoffset="0"
 	                    data-y="200"
@@ -51,7 +51,7 @@ get_header(); ?>
 	                    style="z-index: 6">
 	                    Unify is creative technology company providing key digital services on web and mobile. <br>
 	                    We minimize the gap between technology and its audience.
-	                </div>
+	                </div> -->
 	                <!-- END LAYER -->
 
 	                <!-- LAYER -->
@@ -60,7 +60,7 @@ get_header(); ?>
 	                    data-hoffset="0"
 	                    data-y="320"
 	                    data-speed="1600"
-	                    data-start="2800"
+	                    data-start="1000"
 	                    data-easing="Power4.easeOut"
 	                    data-endspeed="300"
 	                    data-endeasing="Power1.easeIn"
@@ -76,7 +76,7 @@ get_header(); ?>
 	            <!-- SLIDE -->
 	            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
 	                <!-- MAIN IMAGE -->
-	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/9.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/FS1ByLev8BQ.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
 	                <!-- LAYER -->
 	                <div class="tp-caption re-title-v2 sft"
@@ -109,7 +109,7 @@ get_header(); ?>
 	                </div>
 
 	                <!-- LAYER -->
-	                <div class="tp-caption sfb"
+<!-- 	                <div class="tp-caption sfb"
 	                    data-x="center"
 	                    data-hoffset="0"
 	                    data-y="230"
@@ -122,14 +122,14 @@ get_header(); ?>
 	                    style="z-index: 6">
 
 	                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mockup/white-ipad.png" alt="">
-	                </div>
+	                </div> -->
 	            </li>
 	            <!-- END SLIDE -->
 
 	            <!-- SLIDE -->
 	            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 3">
 	                <!-- MAIN IMAGE -->
-	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/8.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/0QoCf9WJOfc.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
 	                <div class="tp-caption re-title-v2 sft start"
 	                    data-x="20"
@@ -168,8 +168,8 @@ get_header(); ?>
 	                    data-endeasing="Power1.easeIn"
 	                    data-captionhidden="off"
 	                    style="z-index: 6">
-	                    <a href="#" class="btn-u btn-u-lg re-btn-brd margin-right-5">Read About Us</a>
-	                    <a href="#" class="btn-u btn-u-lg">Visit Our Work</a>
+	                    <a href="about-us" class="btn-u btn-u-lg re-btn-brd margin-right-5">Read About Us</a>
+	                    <a href="portfolio" class="btn-u btn-u-lg">Visit Our Work</a>
 	                </div>
 	            </li>
 	            <!-- END SLIDE -->
