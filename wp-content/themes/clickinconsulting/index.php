@@ -76,7 +76,7 @@ get_header(); ?>
 	            <!-- SLIDE -->
 	            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
 	                <!-- MAIN IMAGE -->
-	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/FS1ByLev8BQ.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+	                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/sliders/vRuj-aEE-X8.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 
 	                <!-- LAYER -->
 	                <div class="tp-caption re-title-v2 sft"

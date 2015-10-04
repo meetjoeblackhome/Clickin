@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Technologies
+ * Template Name: Techno
  * The header for our theme.
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
@@ -20,13 +20,15 @@ get_header();
 				<h2>Technologies</h2>
 			</div>
 			
-			<?php $my_query = new WP_Query('category_name=technologies-category'); ?>
+			<?php $my_query = new WP_Query('category_name=techno-category'); ?>
 			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-				<?php 
-					$thumb_id = get_post_thumbnail_id();
-					$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-					$thumb_url = $thumb_url_array[0];
-				?>
+			
+			<?php
+				$thumb_id = get_post_thumbnail_id();
+				$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+				$thumb_url = $thumb_url_array[0];
+			?>
+
 				<!-- Clients Block-->
 				<div class="row clients-page margin-bottom-20 post">
 					<div class="col-md-2">
@@ -36,20 +38,6 @@ get_header();
 						<h3>
 							<?php the_title(); ?>
 						</h3>
-						<?php
-							// Tags
-							$posttags = get_the_tags();
-							if($posttags !== "undefined") { ?>
-								<ul class="list-inline tags">
-									<?php
-										if ($posttags) {
-											foreach($posttags as $tag) {
-												echo "<li class='tag'>{$tag->name }</li>"; 
-											}
-										}
-									?>
-								</ul>
-							<?php } ?>
 						<div class="post-content">
 							<?php the_content(); ?>
 						</div>
@@ -62,4 +50,4 @@ get_header();
 </div><!--/container-->
 <!--=== End Content Part ===-->
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
