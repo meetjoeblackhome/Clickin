@@ -1,39 +1,45 @@
 <?php
 /**
- * Template Name: Techno
- * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
+ * Template Name: Technologies
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package clickinconsulting
  */
 get_header();
 ?>
-
-<!--=== Content Part ===-->
-<div class="container content technologies__page">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="headline">
-				<h2>Technologies</h2>
+<div class="technologies__page">
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs-v3 img-v3 text-center">
+		<div class="container">
+			<h1>Technologies</h1>
+			<p>Creative Freedom Matters User Experience</p>
+		</div>
+	</div>
+	<!-- End :: Breadcrumbs -->
+	<div class="container content">
+		<?php $my_query = new WP_Query('category_name=technologies_category'); ?>
+		<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			<?php 
+				$thumb_id = get_post_thumbnail_id();
+				$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+				$thumb_url = $thumb_url_array[0];
+			?>
+		<!-- Clients Block-->
+		<div class="row clients-page">
+			<div class="col-xs-12">
+				<div class="col-md-2">
+					<img src="<?php echo $thumb_url; ?>" class="img-responsive hover-effect" alt="">
+				</div>
+				<div class="col-md-10">
+					<h3><?php the_title(); ?></h3>
+					<div>
+						<?php the_content(); ?>
+					</div>
+				</div>
 			</div>
-
-
-
-
-				<!-- Clients Block-->
-
-				<!-- End Clients Block-->
-
-
-
-
-
-		</div><!--/col-md-12-->
-	</div><!--/row-->
-</div><!--/container-->
-<!--=== End Content Part ===-->
-
+		</div>
+		<!-- End Clients Block-->
+		<?php endwhile; ?>
+	</div>
+</div>
 <?php get_footer(); ?>

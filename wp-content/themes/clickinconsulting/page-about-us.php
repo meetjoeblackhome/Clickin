@@ -31,7 +31,7 @@ get_header();
 		</div>
 	</div>
 	<!-- End :: Breadcrumbs -->
-	<div class="container content-sm">
+	<div class="container content">
 		<?php 
 			// Add Attachment Image
 			$thumb_id = get_post_thumbnail_id();

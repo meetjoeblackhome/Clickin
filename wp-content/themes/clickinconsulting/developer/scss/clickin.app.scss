@@ -2,6 +2,7 @@
 	@import 'vars/colors';
 // Modules
 	@import 'modules/preloader';
+	@import 'modules/header';
 	@import 'modules/footer';
 // Responsive SCSS Plugin
 	@import '../vendor/sass-mq/mq';
@@ -15,57 +16,53 @@
 // Themes
 	@import 'themes/clickin';
 
-body {
-	.wrapper {
-		position: relative;
-		// Menu
-		.header-v6 {
-			.navbar-brand {
-				img {
-					height: 40px;
-				}
+.wrapper {
+	position: relative;
+	// Menu
+	.header-v6 {
+		.navbar-brand {
+			img {
+				height: 40px;
 			}
-			.navbar-nav {
-				> li {
+		}
+		.navbar-nav {
+			> li {
+				a {
+					font-size: 12px;
+					padding: 20px 30px;
+					color: #bbb;
+				}
+				&.current-menu-item {
 					a {
-						font-size: 12px;
-						padding: 20px 30px;
-						color: #bbb;
-					}
-					&.current-menu-item {
-						a {
-							text-shadow: none;
-							color: #111;
-							font-weight: bold;
-						}
+						text-shadow: none;
+						color: #111;
+						font-weight: bold;
 					}
 				}
 			}
 		}
-		// Breadcrumbs
-		.breadcrumbs-v3 {
-			min-height: 450px;
-			margin-bottom: 30px;
-			@include mq($until: tablet) {
-				margin-bottom: 0;
-			}
-			.container {
-				margin-top: 110px;
-			}
-			&.img-v3 {
-				background-repeat: no-repeat;
-				background-position: bottom center;
-			}
+	}
+	// Breadcrumbs
+	.breadcrumbs-v3 {
+		min-height: 450px;
+		margin-bottom: 30px;
+		@include mq($until: tablet) {
+			margin-bottom: 0;
 		}
-		// Container Content
 		.container {
-			&.content-md,
-			&.content-sm,
-			&.content {
-				@include mq($until: tablet) {
-					padding-top: 30px;
-					padding-bottom: 10px;
-				}
+			margin-top: 110px;
+		}
+		&.img-v3 {
+			background-repeat: no-repeat;
+			background-position: bottom center;
+		}
+	}
+	// Container Content
+	.container {
+		&.content {
+			@include mq($until: tablet) {
+				padding-top: 30px;
+				padding-bottom: 10px;
 			}
 		}
 	}

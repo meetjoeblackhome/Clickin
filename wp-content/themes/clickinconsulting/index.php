@@ -138,7 +138,7 @@ get_header(); ?>
 	</div>
 	<!--=== End Slider ===-->
 
-	<div class="container content-sm">
+	<div class="container content">
 		<div class="text-center margin-bottom-50">
 			<h2 class="title-v2 title-center">WE ARE UNIFY AGENCY</h2>
 			<p class="space-lg-hor">If you are going to use a <span class="color-green">passage of Lorem Ipsum</span>, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making <span class="color-green">this the first</span> true generator on the Internet.</p>

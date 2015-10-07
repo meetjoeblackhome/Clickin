@@ -22,10 +22,10 @@ get_header();
 	</div>
 	<!-- End :: Breadcrumbs -->
 
-	<div class="container content-md">
+	<div class="container content">
 
 		<div class="row news-v1">
-			<?php $my_query = new WP_Query('category_name=portfolio-category'); ?>
+			<?php $my_query = new WP_Query('category_name=portfoliocategory'); ?>
 			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				<?php 
 					$thumb_id = get_post_thumbnail_id();

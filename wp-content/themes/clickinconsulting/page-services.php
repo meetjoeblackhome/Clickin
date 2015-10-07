@@ -1,10 +1,6 @@
 <?php
 /**
  * Template Name: Services
- * The header for our theme.
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package clickinconsulting
@@ -23,10 +19,10 @@ get_header();
 	</div>
 	<!-- End :: Breadcrumbs -->
 	<!-- Featured Blog -->
-	<div class="container content-sm">
+	<div class="container content">
 		<div class="row featured-blog">
 
-			<?php $my_query = new WP_Query('category_name=services-category'); ?>
+			<?php $my_query = new WP_Query('category_name=servicescategory'); ?>
 			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				<?php 
 					$thumb_id = get_post_thumbnail_id();
