@@ -32,8 +32,8 @@ get_header();
 	<!-- End :: Breadcrumbs -->
 
 	<div class="container content">
-			<div class="row margin-bottom-30">
-				<div class="col-md-9 mb-margin-bottom-30">
+			<div class="row">
+				<div class="col-md-9">
 					<div class="row">
 						<div class="col-xs-12 col-sm-11">
 							<?php echo do_shortcode('[contact-form-7 id="47" title="Contact Us Form"]'); ?>
@@ -44,7 +44,7 @@ get_header();
 				<div class="col-md-3">
 					<!-- Contacts -->
 					<div class="headline"><h2>Contacts</h2></div>
-					<ul class="list-unstyled who margin-bottom-30">
+					<ul class="list-unstyled who">
 
 						<? if(get_field('sidebar_address') !== "") { ?>
 							<li>

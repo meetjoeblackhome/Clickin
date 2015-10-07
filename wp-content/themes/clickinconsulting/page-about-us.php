@@ -40,19 +40,23 @@ get_header();
 		?>
 
 		<div class="row">
-			<div class="col-md-6 md-margin-bottom-50">
+			<div class="col-md-6 image__container">
 				<img class="img-responsive" src="<?php echo $thumb_url ?>">
 			</div>
 			<div class="col-md-6">
-				<p>Phasellus feugiat elit quam, nec tincidunt leo imperdiet nec. Aliquam et orci orci. In finibus lorem eget sapien mollis finibus. Cras ultrices mollis justo.</p><br>
+				<?php if(get_field('about_us_heading') !== "") { ?>
+				<p>
+					<?php echo get_field('about_us_information');?>
+				</p><br>
+				<?php } ?>
 				<div class="row">
-					<ul class="col-xs-6 list-unstyled lists-v1">
+					<ul class="col-md-6 col-xs-12 list-unstyled lists-v1">
 						<li><i class="fa fa-angle-right"></i>Curabitur porttitor sapien</li>
 						<li><i class="fa fa-angle-right"></i>Donec vitae quam neque</li>
 						<li><i class="fa fa-angle-right"></i>Cum sociis natoque</li>
 						<li><i class="fa fa-angle-right"></i>Aliquam et orci orci</li>
 					</ul>
-					<ul class="col-xs-6 list-unstyled lists-v1">
+					<ul class="col-md-6 col-xs-12 list-unstyled lists-v1">
 						<li><i class="fa fa-angle-right"></i>Curabitur porttitor sapien</li>
 						<li><i class="fa fa-angle-right"></i>Donec vitae quam neque</li>
 						<li><i class="fa fa-angle-right"></i>Cum sociis natoque</li>

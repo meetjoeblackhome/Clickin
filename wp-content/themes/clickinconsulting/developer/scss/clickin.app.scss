@@ -3,6 +3,8 @@
 // Modules
 	@import 'modules/preloader';
 	@import 'modules/footer';
+// Responsive SCSS Plugin
+	@import '../vendor/sass-mq/mq';
 // Pages
 	@import 'pages/home';
 	@import 'pages/portfolio';
@@ -44,12 +46,26 @@ body {
 		.breadcrumbs-v3 {
 			min-height: 450px;
 			margin-bottom: 30px;
+			@include mq($until: tablet) {
+				margin-bottom: 0;
+			}
 			.container {
 				margin-top: 110px;
 			}
 			&.img-v3 {
 				background-repeat: no-repeat;
 				background-position: bottom center;
+			}
+		}
+		// Container Content
+		.container {
+			&.content-md,
+			&.content-sm,
+			&.content {
+				@include mq($until: tablet) {
+					padding-top: 30px;
+					padding-bottom: 10px;
+				}
 			}
 		}
 	}
