@@ -1,4 +1,57 @@
 // Footer Module
-.footer-v1 .footer-logo {
-	margin: 12px 0 20px;
+#footer {
+	.footer {
+		@include mq($until: desktop) {
+			padding: 20px 0;
+		}
+	}
+	.footer-logo-link {
+		display: block;
+		.footer-logo {
+			@include mq($until: desktop) {
+				margin: 5px 0px 20px;
+			}
+			margin: 12px 0 20px;
+		}
+	}
+	.list-unstyled.link-list {
+		li {
+			@include mq($until: desktop) {
+				a {
+					padding: 15px 0;
+					display: block;
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				i {
+					display: none;
+				}
+			}
+		}
+	}
+	address {
+		line-height: 1.42857143;
+		@include mq($until: desktop) {
+			margin-bottom: 0;
+		}
+		a {
+			text-decoration: none;
+			display: block;
+			padding: 6px 0;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			i {
+				margin-right: 8px;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.footer-socials {
+		text-align: center;
+	}
 }

@@ -1,11 +1,11 @@
 // Vars
 	@import 'vars/colors';
+// Responsive SCSS Plugin
+	@import '../vendor/sass-mq/mq';
 // Modules
 	@import 'modules/preloader';
 	@import 'modules/header';
 	@import 'modules/footer';
-// Responsive SCSS Plugin
-	@import '../vendor/sass-mq/mq';
 // Pages
 	@import 'pages/home';
 	@import 'pages/portfolio';
