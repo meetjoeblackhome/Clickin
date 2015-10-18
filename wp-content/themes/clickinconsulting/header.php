@@ -7,6 +7,7 @@
 ?><!DOCTYPE html>
 <html>
 	<head>
+<<<<<<< HEAD
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/apple-icon-57x57.png" />
@@ -27,6 +28,11 @@
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/favicons/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
+=======
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="msapplication-tap-highlight" content="no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+>>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332
 		<?php wp_head(); ?>
 	</head>
 	<body class="header-fixed">
@@ -42,7 +48,13 @@
 								<span class="icon-bar"></span>
 							</button>
 							<div class="navbar-brand">
+<<<<<<< HEAD
 								<a class="logo" href="<?php get_home_url(); ?>/clickin"></a>
+=======
+								<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<img class="shrink-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
+								</a>
+>>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332
 							</div>
 						</div>
 						<div class="collapse navbar-collapse navbar-responsive-collapse">

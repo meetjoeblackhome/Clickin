@@ -14,6 +14,9 @@
 		margin-bottom: 50px;
 		padding-bottom: 30px;
 		border-bottom: solid 1px #eee; 
+		&:last-child {
+			border-bottom: 0;
+		}
 	}
 
 	.clients-page ul {
@@ -41,9 +44,6 @@
 	}
 
 	@media (max-width: 992px) { 
-		.clients-page {
-			text-align: center;
-		}
 		.clients-page img {
 			margin: 0 auto 30px;
 		}

@@ -4,6 +4,13 @@
 	@import 'vars/colors';
 // Responsive SCSS Plugin
 	@import '../vendor/sass-mq/mq';
+<<<<<<< HEAD
+=======
+// Modules
+	@import 'modules/preloader';
+	@import 'modules/header';
+	@import 'modules/footer';
+>>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332
 // Pages
 	@import 'pages/home';
 	@import 'pages/portfolio';

@@ -22,7 +22,7 @@ get_header();
 	<div class="container content">
 		<div class="row featured-blog">
 
-			<?php $my_query = new WP_Query('category_name=servicescategory'); ?>
+			<?php $my_query = new WP_Query('category_name=services_category'); ?>
 			<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 				<?php 
 					$thumb_id = get_post_thumbnail_id();
