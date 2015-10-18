@@ -1,3 +1,49 @@
-.header-fixed .header-v6.header-sticky {
-	border-bottom: 1px solid #eee;
+// Menu
+.header-v6 {
+	z-index: 99999;
+	// Default
+	.navbar-brand {
+		.logo {
+			@include mq($until: lwide) {
+				width: 110px;
+				height: 45px;
+				margin-top: 10px;
+			}
+			display: block;
+			padding-top: 4px;
+			background: transparent url('../images/clickin-logo.png') no-repeat;
+			width: 150px;
+			height: 55px;
+			background-size: 100% auto;
+		}
+	}
+	// Shrink
+	&.header-fixed-shrink {
+		border-bottom: 1px solid #eee;
+		.navbar-brand {
+			.logo {
+				width: 110px;
+				height: 45px;
+				@include mq($until: lwide) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.navbar-nav {
+		> li {
+			a {
+				font-size: 12px;
+				padding: 20px 30px;
+				color: #bbb;
+			}
+			&.current-menu-item {
+				a {
+					text-shadow: none;
+					color: #111;
+					font-weight: bold;
+				}
+			}
+		}
+	}
 }

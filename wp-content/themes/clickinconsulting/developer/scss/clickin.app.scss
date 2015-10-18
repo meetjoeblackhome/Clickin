@@ -1,9 +1,7 @@
+// Unify Theme Vendor
+
 // Vars
 	@import 'vars/colors';
-// Modules
-	@import 'modules/preloader';
-	@import 'modules/header';
-	@import 'modules/footer';
 // Responsive SCSS Plugin
 	@import '../vendor/sass-mq/mq';
 // Pages
@@ -16,32 +14,14 @@
 // Themes
 	@import 'themes/clickin';
 
+
 .wrapper {
 	position: relative;
-	// Menu
-	.header-v6 {
-		.navbar-brand {
-			img {
-				height: 40px;
-			}
-		}
-		.navbar-nav {
-			> li {
-				a {
-					font-size: 12px;
-					padding: 20px 30px;
-					color: #bbb;
-				}
-				&.current-menu-item {
-					a {
-						text-shadow: none;
-						color: #111;
-						font-weight: bold;
-					}
-				}
-			}
-		}
-	}
+	// Modules
+		@import 'modules/header';
+		@import 'modules/preloader';
+		@import 'modules/footer';
+
 	// Breadcrumbs
 	.breadcrumbs-v3 {
 		min-height: 450px;

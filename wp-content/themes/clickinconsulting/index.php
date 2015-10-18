@@ -34,7 +34,7 @@ get_header(); ?>
 						data-easing="Back.easeInOut"
 						data-endeasing="Power1.easeIn"
 						data-endspeed="300">
-						Clickin Consulting
+						
 					</div>
 					<!-- END LAYER -->
 
@@ -72,7 +72,6 @@ get_header(); ?>
 						data-easing="Back.easeInOut"
 						data-endeasing="Power1.easeIn"
 						data-endspeed="300">
-						Clickin Consulting
 					</div>
 					<!-- END LAYER -->
 
@@ -110,7 +109,6 @@ get_header(); ?>
 						data-easing="Back.easeInOut"
 						data-endeasing="Power1.easeIn"
 						data-endspeed="300">
-						Clickin Consulting
 					</div>
 					<!-- END LAYER -->
 

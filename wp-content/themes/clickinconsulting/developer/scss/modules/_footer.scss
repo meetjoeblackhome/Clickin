@@ -1,4 +1,9 @@
 // Footer Module
-.footer-v1 .footer-logo {
-	margin: 12px 0 20px;
+.footer {
+	.footer-logo-link {
+		display: block;
+		text-align: right;
+		.footer-logo {
+		}
+	}
 }

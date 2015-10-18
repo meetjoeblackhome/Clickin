@@ -5,11 +5,8 @@
 	}
 	.breadcrumbs-v3 {
 		&.img-v3 {
-			background: url('../images/about-us/R3NhyRLEnTw.jpg') no-repeat bottom center;
-			background-size: 100% auto;
-			@include mq($until: desktop) {
-				background-size: auto auto;
-			}
+			background: url('../images/about-us/about-us-bg-2.jpg');
+			background-position: top center !important;
 		}
 	}
 	.image__container {

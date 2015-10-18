@@ -1,5 +1,11 @@
 .technologies__page {
-	padding-top: 96px;
+	// padding-top: 96px;
+	.breadcrumbs-v3 {
+		&.img-v3 {
+			background: url('../images/technologies/technologies-bg.jpg');
+			background-position: top center !important;
+		}
+	}
 	.headline {
 		border-bottom: 1px dotted #e4e9f0;
 	}

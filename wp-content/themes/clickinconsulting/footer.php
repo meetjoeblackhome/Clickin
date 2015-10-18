@@ -15,7 +15,7 @@
 					<div class="container">
 						<div class="row">
 							<!-- About -->
-							<div class="col-md-3 md-margin-bottom-40">
+							<div class="col-md-3 col-md-offset-1 md-margin-bottom-40 text-center">
 								<a href="/">
 									<img id="logo-footer" class="footer-logo img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo-footer.png" alt="Clickin Consulting Logotype">
 								</a>
@@ -39,7 +39,7 @@
 							<!-- End Link List -->
 
 							<!-- Address -->
-							<div class="col-md-3 map-img md-margin-bottom-40">
+							<div class="col-md-3 col-md-offset-1 map-img md-margin-bottom-40">
 								<div class="headline"><h2>Contact Us</h2></div>
 								<address class="md-margin-bottom-40">
 									25, Lorem Lis Street, Orange <br>

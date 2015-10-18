@@ -1,28 +1,29 @@
 .home__page {
 	// Home Page Slider
-	@include mq($until: tablet) {
-		.tp-banner-container {
-			max-height: 350px !important;
-		}
+	.tp-caption.re-title-v1 {
+		width: 846px;
+		height: 54px;
+		background:transparent url('../images/home/sliders/logo.png') left top no-repeat;
+		background-size: 100% auto;
+		margin: 0 auto;
+	}
+	@include mq($until: desktop) {
 		// Title
 		.tp-caption.re-title-v1.sft.start {
-			width: 90% !important;
+			width: 80% !important;
 			text-align: center !important;
 			display: block;
-			top: 25% !important;
 		}
-		.tp-caption.sft.start {
-			top: 40% !important;
-			.btn-u.btn-u-lg {
-				text-align: center !important;
-				display: block !important;
-				padding: 15px;
-				margin-bottom: 20px;
-				width: 200px !important;
-				&:last-child {
-					margin-bottom: 0;
-				}
+		.btn-u.btn-u-lg {
+			text-align: center !important;
+			display: block !important;
+			padding: 15px;
+			margin-bottom: 20px;
+			width: 200px !important;
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
+	@include mq($until: tablet) {}
 }
