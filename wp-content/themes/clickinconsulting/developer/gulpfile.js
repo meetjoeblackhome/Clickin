@@ -27,7 +27,15 @@ var
 			.pipe(gulp.dest('assets/javascripts/vendor/'))
 			;
 	});
-
+	// Coffee
+	gulp.task('coffee', function() {
+		gulp.src('coffee/**/*.coffee')
+			.pipe(plumber())
+			.pipe(coffee({bare: true}))
+			.pipe(gulp.dest('../assets/javascripts/'))
+			// .pipe(connect.reload())
+			;
+	});
 	// Stylesheets
 	gulp.task('scss', function () {
 		return scss('scss/clickin.app.scss', {
@@ -55,6 +63,7 @@ var
 		gulpsync.sync([
 				// 'clean',
 				[
+					'coffee',
 					'scss',
 					'watch'
 				]

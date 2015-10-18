@@ -159,7 +159,7 @@ get_header(); ?>
 					<a href="#">Learn More</a>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 md-margin-bottom-40">
 				<i class="pull-left fa fa-compress"></i>
 				<div class="content-boxes-in-v4">
 					<h2>Fully Responsive</h2>
@@ -170,7 +170,4 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
-
-
 <?php get_footer(); ?>

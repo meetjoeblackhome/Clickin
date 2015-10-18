@@ -30,6 +30,9 @@
 	.clients-page h3 {
 		margin-top: 0;
 		font-size: 22px;
+		@include mq($until: lwide) {
+			text-align: center;
+		}
 	}
 
 	.clients-page img {

@@ -4,6 +4,7 @@
 	// Default
 	.navbar-brand {
 		.logo {
+			transition: all .1s ease-in;
 			@include mq($until: lwide) {
 				width: 110px;
 				height: 45px;

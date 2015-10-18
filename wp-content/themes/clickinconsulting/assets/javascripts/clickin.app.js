@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
       preloader = $('.preloader');
       return setTimeout((function() {
         return preloader.remove();
-      }), 800);
+      }), 400);
     }
   };
   return clickin.preloader();

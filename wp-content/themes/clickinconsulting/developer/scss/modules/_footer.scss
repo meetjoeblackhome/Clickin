@@ -1,14 +1,3 @@
-// Footer Module
-<<<<<<< HEAD
-.footer {
-	.footer-logo-link {
-		display: block;
-		text-align: right;
-		.footer-logo {
-		}
-	}
-}
-=======
 #footer {
 	.footer {
 		@include mq($until: desktop) {
@@ -19,9 +8,17 @@
 		display: block;
 		.footer-logo {
 			@include mq($until: desktop) {
-				margin: 5px 0px 20px;
+				margin: 5px auto 20px;
+			}
+			@include mq($until: tablet) {
+				margin: 0 auto 30px;
 			}
 			margin: 12px 0 20px;
+		}
+	}
+	.headline {
+		@include mq($until: tablet) {
+			text-align: center;
 		}
 	}
 	.list-unstyled.link-list {
@@ -29,20 +26,21 @@
 			@include mq($until: desktop) {
 				a {
 					padding: 15px 0;
-					display: block;
+					display: inline-block;
 					text-decoration: none;
 					&:hover {
 						text-decoration: none;
 					}
 				}
 				i {
-					display: none;
+					margin-top: 15px;
 				}
 			}
 		}
 	}
 	address {
 		line-height: 1.42857143;
+		font-size: 13px;
 		@include mq($until: desktop) {
 			margin-bottom: 0;
 		}
@@ -65,4 +63,3 @@
 		text-align: center;
 	}
 }
->>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332

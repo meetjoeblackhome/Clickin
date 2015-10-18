@@ -45,9 +45,7 @@
 								<span class="icon-bar"></span>
 							</button>
 							<div class="navbar-brand">
-								<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-									<img class="shrink-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo.png" alt="Logo">
-								</a>
+								<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
 							</div>
 						</div>
 						<div class="collapse navbar-collapse navbar-responsive-collapse">

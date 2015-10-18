@@ -5,7 +5,7 @@ jQuery(document).ready ->
 			preloader = $('.preloader');
 			setTimeout (->
 				preloader.remove()
-			), 800
+			), 400
 			# End :: Preloader
 	clickin.preloader()
 

@@ -27,10 +27,10 @@ get_header();
 		<!-- Clients Block-->
 		<div class="row clients-page">
 			<div class="col-xs-12">
-				<div class="col-md-2">
+				<div class="col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-4">
 					<img src="<?php echo $thumb_url; ?>" class="img-responsive hover-effect" alt="">
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-10 col-sm-12">
 					<h3><?php the_title(); ?></h3>
 					<div>
 						<?php the_content(); ?>
