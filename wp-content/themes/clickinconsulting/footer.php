@@ -14,14 +14,8 @@
 				<div class="footer">
 					<div class="container">
 						<div class="row">
-<<<<<<< HEAD
-							<!-- About -->
-							<div class="col-md-3 col-md-offset-1 md-margin-bottom-40 text-center">
-								<a href="/">
-=======
 							<div class="col-md-3 col-md-offset-1">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo-link">
->>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332
 									<img id="logo-footer" class="footer-logo img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/clickin-logo-footer.png" alt="Clickin Consulting Logotype">
 								</a>
 							</div><!--/col-md-4-->
@@ -40,9 +34,6 @@
 							</div><!--/col-md-4-->
 							<!-- End Link List -->
 							<!-- Address -->
-<<<<<<< HEAD
-							<div class="col-md-3 col-md-offset-1 map-img md-margin-bottom-40">
-=======
 							<div class="col-md-4 col-md-offset-1 map-img">
 								<?php 
 								function get_id_by_slug($page_slug) {
@@ -55,7 +46,6 @@
 								}
 								$slug = get_id_by_slug('contact_us');
 								?>
->>>>>>> c84fc990d9186a7e7248cc4e3415a2cd9302e332
 								<div class="headline"><h2>Contact Us</h2></div>
 								<address>
 									<? if(get_field('sidebar_address', $slug, true) !== "") { ?>
